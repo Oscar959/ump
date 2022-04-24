@@ -2,10 +2,10 @@
 session_start();
 include('../connect.php');
 include('../conn.php');
-//if(!($_SESSION['name']) && !($_SESSION['firstname']) && !($_SESSION['mdp'])){
-//	header('location:login.php');
+if(!($_SESSION['name']) && !($_SESSION['firstname']) && !($_SESSION['mdp'])){
+		header('location:login.php');
 	
-//}
+}
 //	$mdp=$_SESSION['mdp'];
 //    $firstname=$_SESSION['firstname'];
 //	$query=mysqli_fetch_array(mysqli_query($con, "SELECT * FROM members WHERE firstname='$firstname' AND mdp='$mdp' ") );

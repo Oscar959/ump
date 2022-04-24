@@ -15,7 +15,7 @@ if(!($_SESSION['name']) && !($_SESSION['firstname']) && !($_SESSION['mdp'])){
 if(isset($_POST['subject'])){
  $subject= mysqli_real_escape_string($con, $_POST['subject']);
  $comment= mysqli_real_escape_string($con,$_POST['comment']);
- $query= "INSERT INTO notif(id, subject, notif_text, notif_status,date_pub, admin_id, members_id) values(null,'$subject', '$comment', '0',now(), '$id', '0')";
+ $query= "INSERT INTO notif(id, subject, notif_text, notif_status,date_pub, admin_id) values(null,'$subject', '$comment', '0',now(), '$id')";
  mysqli_query($con, $query);
 }
 																		
