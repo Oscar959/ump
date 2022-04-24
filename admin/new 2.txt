@@ -1,0 +1,93 @@
+		    <?php 
+			function apostrophe($data){
+			 $cut=explode("'",$data);
+			 $ready=implode('\\\'',$cut);
+			 return $ready;
+            }
+			include('../conn.php');
+			$output='';
+			if(isset($_POST['nom'])&& isset($_POST['ps']) && isset($_POST['prenom']) && isset($_POST['gender']) && isset($_POST['date'])&& isset($_POST['adresse']) 
+				&& isset($_POST['tel']) && isset($_POST['mail']) && isset($_POST['etude']) && isset($_POST['niveau']) && isset($_POST['qualite']) && isset($_POST['profession'])
+			&& isset($_POST['mdp']) && isset($_FILES['photo']['name']) && isset($_FILES['cv']['name']) && isset($_FILES['lettre']['name'])){
+			$nom=apostrophe($_POST['nom']);
+			$postnom=apostrophe($_POST['ps']);
+			$prenom=apostrophe($_POST['prenom']);
+			$sexe=$_POST['gender'];
+			$date=$_POST['date'];
+			$adresse=apostrophe($_POST['adresse']);
+			$tel=$_POST['tel'];
+			$mail=$_POST['mail'];
+			$etude=apostrophe($_POST['etude']);
+			$niveau=apostrophe($_POST['niveau']);
+			$qualite=apostrophe($_POST['qualite']);
+			$profession=apostrophe($_POST['profession']);
+			$mdp=md5($_POST['mdp']);
+			
+			$file_name=$_FILES['photo']['name'];
+			$file_tmp=$_FILES['photo']['tmp_name'];
+			$file_size=$_FILES['photo']['size'];
+			$file_error=$_FILES['photo']['error'];
+			$file_type=$_FILES['photo']['type'];
+			  
+			  if(is_uploaded_file($file_tmp)){
+					if($file_size < 2097152){
+						if($file_type= 'image/jpg'){
+							if(move_uploaded_file($file_tmp, "../uploads/$file_name")){
+								$output= '<p class="alert alert-success">file uploaded successefully</p>';
+							}else{
+								$output= '<p class="alert alert-success">file uploaded failed</p>';
+							}
+							}else{
+								$output= '<p class="alert alert-success">file not image</p>';
+							}
+							}else{
+								$output= '<p class="alert alert-success">2M only</p>';
+							}
+							}else{
+								$output= '<p class="alert alert-success">Please select a file</p>';
+							}
+			$file_name1=$_FILES['cv']['name'];
+			$file_tmp=$_FILES['cv']['tmp_name'];
+			$file_size=$_FILES['cv']['size'];
+			$file_error=$_FILES['cv']['error'];
+			$file_type=$_FILES['cv']['type'];					
+			$allowed=array('pdf');
+			$temp=
+			explode(".", $file_name1);
+			$extensions=end($temp);
+			$upload_file=$file_name1;
+			move_uploaded_file($file_tmp, "../doc/$file_name1");
+			
+			$file_name2=$_FILES['lettre']['name'];
+			$file_tmp=$_FILES['lettre']['tmp_name'];
+			$file_size=$_FILES['lettre']['size'];
+			$file_error=$_FILES['lettre']['error'];
+			$file_type=$_FILES['cv']['type'];					
+			$allowed=array('pdf');
+			$temp=explode(".", $file_name2);
+			$extensions=end($temp);
+			$upload_file=$file_name2;
+			move_uploaded_file($file_tmp, "../lettres/$file_name2");
+			
+			$query="INSERT INTO `members` (`id`, `nom`, `post_nom`, `prenom`, `sexe`, `dob`, `adresse`, `telephone`, `mail`, `mdp`, `etudes_faites`,
+				`niveau_etudes`, `profession_actuelle`, `qualite_demande`, `date_inscr`, `statut`, `is_advanced`, `photo`, `cv`, `lettre`)
+				VALUES (NULL, '$nom', '$postnom', '$prenom', '$sexe', '$date', '$adresse', '$tel', '$mail', '$mdp', '$etude', 
+				'$niveau', '$profession', '$qualite', now(), '0', '0', '$file_name', '$file_name1', '$file_name2')";
+			$query1=mysqli_query($con, $query);
+			if($query1){
+			  $output= '<script>
+			  alert("Votre compte est crée avec succès. Connectez vous!"); 
+			  setTimeout(function(){
+			  window.location.replace("users_connect_login.php");
+			  },1000); </script>';
+			}else{
+			  $output= '<script> alert("Cà n\'a pas marché"); </script>';
+			}
+		   
+		}else{
+			$output= '<script> alert("Vous n\'etes pas enreistré veuillez ressayez"); </script>';
+		}
+		 //header('location:register_users.php?success');
+		echo $output;
+		?>
+
