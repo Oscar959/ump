@@ -46,8 +46,8 @@
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4 style="font-family: 'Nunito', sans-serif;">Réjoignez notre Newsletter</h4>
             <p>Soyez regulierement informés des nos campagnes en inscrivant votre email</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <form id="form-news">
+              <input type="email" name="email" id="email"><input type="submit" value="Subscribe">
             </form>
           </div>
 
@@ -88,9 +88,33 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/bootstrap/js/jquery.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#form-news').on('submit', function(e){
+			   e.preventDefault();
+         if($('#email').val()!= ''){
+            $.ajax({
+              url:"insert_news.php",
+              method:"POST",
+              data:new FormData(this),
+              cache: false,
+              contentType: false,
+              processData:false,
+              success:function(data){
+                alert("Merci de votre abonnement");
+                $("#form-news")[0].reset();
+              }  
+            });
+         }else{
+           alert("Veuillez introduire l'email");
+         }
+      });
+    });
+  </script>
 
 </body>
 
