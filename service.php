@@ -15,7 +15,7 @@
 
       <div class="section-title">
         <h2 style="text-align:center; text-align:center;font-family: 'Nunito', sans-serif;">Nos Objectifs</h2>
-        <p style="text-align:center">Ici sont reprises quelques services que nous orgarnisons.</p>
+        <p style="text-align:center">Içi sont repris quelques objectifs spécifiques expliquant notre raison d'être :</p>
       </div>
 
       <div class="row">
@@ -81,27 +81,30 @@
 
         <div class="section-title">
           <h2 style="text-align:center;font-family: 'Nunito', sans-serif;">Ce que nous organisons aussi</h2>
-          <p>L'UMP organise des formations et activités dans le but de remplir ses objectifs, Nous vous encourageons vivement a etre constamment à jour avec ses activités dans le but d'y participer.
-		  Nous organisons des formations et activités dans les domaines ci-apres:</p>
+          <p>L'UMP ONGD vous offre nombreux services à domicile , dans les milieux Éducatifs , Hospitaliers et dans son Siège Social. Ces différents services sont tenus par des Spécialistes, Généralistes et différents experts en la matière. Vous pouvez nous contacter dans ce <a href="service_asked.php">lien</a> en cas de besoin en remplissant enfin de remplir une fiche de demande de service. </p>
         </div>
 
         <div class="row gy-4" style="font-family: 'Nunito', sans-serif;">
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Cardiologie</a>
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">1. Services de consultation médicale</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Neurologie</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">2. Sérvices d'écoute dans differents domaines notamment la santé, de l'éducation,et le genre ...</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Hepatologie</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">3. Livraison des médicaments</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Pediatrie</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">4. Offre des conseils sanitaires</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Ophtamologie</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">5. Organisation des formations des renforcement des capacités sur differents domaines</a></a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-6">6. Réalisation des bilans paracliniques</a></a>
               </li>
             </ul>
           </div>
@@ -110,60 +113,73 @@
               <div class="tab-pane active show" id="tab-1">
                 <div class="row gy-4">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Cardiologie</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-2">
-                <div class="row gy-4">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Et blanditiis nemo veritatis excepturi</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-3">
-                <div class="row gy-4">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                    <h3>Consultation</h3>
+                    <p class="fst-italic">Services de consultation médicale</p>
+                    <p>Nous organisons des consultations des plusieurs cas des maladies. suivez ce lien pour un <a  href="consult.php">rendez-vous de consultation</a>ou soit appeler un numéro en bas de page.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Service d'écoute</h3>
+                    <p class="fst-italic">Sérvices d'écoute dans differents domaines notamment la santé, de l'éducation,et le genre ...</p>
+                    <p></p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/ref1.jpeg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Livraison des médicaments</h3>
+                    <p class="fst-italic">L'UMP est aussi actif dans la livraison des médicaments</p>
+                    <p>La livraison des médicaments fait partie integrante des objectifs de l'UMP</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
               <div class="tab-pane" id="tab-4">
                 <div class="row gy-4">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                    <h3>Offre des conseils sanitaires</h3>
+                    <p class="fst-italic">Donner des conseils sanitaires est l'un des objectifs majeures de l'UMP</p>
+                    <p>Nous nous activons pour donner des conseils sanitaires partout en organisant des ressemblement publiques dans les écoles, centre de santé pour donner des conseils de santé à notre precieuse rélation</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/med.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
               <div class="tab-pane" id="tab-5">
                 <div class="row gy-4">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    <h3>Formation des renforcements des capacités sur differents domaines</h3>
+                    <p class="fst-italic">Pour remplir ses objectifs, L'UMP organise aussi differentes formations.</p>
+                    <p>Nous organisons des formations des renforcement de capacités sur differents domaines. N'hesitez pas de nous contacter par ce  <a href="service_asked.php">lien</a>pour plus d'informations</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/ref2.jpeg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tab-pane" id="tab-6">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Réalisation des bilans paracliniques</h3>
+                    <p class="fst-italic">Pour remplir ses objectifs, L'UMP organise aussi differentes formations.</p>
+                    <p>Nous organisons aussi des Réalisation des bilans paracliniques. N'hesitez pas de nous contacter par ce  <a href="service_asked.php">lien</a> pour plus d'informations</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Docteur.jpeg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>

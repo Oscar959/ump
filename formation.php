@@ -65,9 +65,9 @@ include("header.php");
         </form>
 		
 		<div class="alert alert-success  alert-dismissable col-lg-4" style="display: none">
-			<button type="button" class="close">×</button>
+			<button type="button" class="close">x</button>
 			<h4>Reussie</h4> 
-			<p style="text-align:justify">Votre demande est soumise avec succès. L'UMP vous contactera pour vous fournir toutes les informations pour vous permettre de suivre la formation</p>
+			<p style="text-align:justify">Votre demande est soumise avec succÃ¨s. L'UMP vous contactera pour vous fournir toutes les informations pour vous permettre de suivre la formation</p>
 		</div>
 	</div>
     </section><!-- End Appointment Section -->
